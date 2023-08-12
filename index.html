@@ -7,47 +7,59 @@
   <title>repl.it</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
 
 
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <h2 id="clock" class="">00:00:00</h2>
-  <form id="login_form" class="hidden ">
-    <input required maxlength="15" type="text" placeholder="What is your name?" class="name">
-    <input type="submit" value="Log In" class="login">
-  </form>
-  <h1 id="greeting" class="hidden "></h1>
-
-
-  <div id="weather" class="">
-    <span></span>
-    <span></span>
-  </div>
-<section id="main_box" class="clearFix">
-  <div class="first_box">
-    <!-- quote -->
-    <div id="bgBox">
+  <main>
+    <div id="clock">
+      <h2 class="clock">00:00:00</h2>
     </div>
+
+    <div id="formBox">
+      <form class="login_form">
+        <input required maxlength="15" type="text" placeholder="What is your name?" class="name">
+        <input type="submit" value="Log In" class="login">
+      </form>
+    </div>
+
+    <div id="greetingBox">
+      <h1 class="greeting"></h1>
+    </div>
+
+    <div id="weather" class="">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="imgBox">
+      <div class="imgWrap"></div>
+    </div>
+
     <div id="quote" class="">
       <span></span>
-      <span></span>
+      <!-- <span></span> -->
     </div>
-    <!-- bgBox -->
-  </div>
-  <div class="second_box">
-    <form id="todo_form" class="">
-      <input type="text" placeholder="Write a To Do and Press Enter">
-    </form>
-    <ul id="todo_list" class=""></ul>
-  </div>
-</section>
+
+
+    <div id="todoBox">
+      <form id="todo_form" class="">
+        <input type="text" placeholder="Write a To Do and Press Enter" required class="todo__input">
+        <input type="submit" value="Enter" class="todo__submit">
+      </form>
+      <ul id="todo_list" class=""></ul>
+    </div>
+
+
+  </main>
 
   <script src="js/greeting.js"></script>
   <script src="js/clock.js"></script>
